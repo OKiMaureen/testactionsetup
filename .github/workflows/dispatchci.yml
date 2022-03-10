@@ -1,0 +1,24 @@
+name: Manually triggered workflow (manual)
+on:
+   workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        required: true
+        default: 'Mona the Octocat'
+      home:
+        description: 'location'
+        required: false
+        default: 'The Octoverse'
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+       echo "name: ${{ github.event.inputs.name }}" 
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
