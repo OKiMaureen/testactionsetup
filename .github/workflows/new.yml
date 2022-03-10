@@ -22,5 +22,5 @@ jobs:
               workflow_id: 'dispatchci.yml'
             }
             console.log(params)
-            result = await github.rest.actions.createWorkflowDispatch(params)
+            result =  await octokit.request('POST /repos/okimaureen/testactionsetup/actions/workflows/dispatchci.yml/dispatches', {params})
             console.log(result)
