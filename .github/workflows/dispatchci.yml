@@ -17,8 +17,3 @@ jobs:
     steps:
     - run: |
        echo "name: ${{ github.event.inputs.name }}" 
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
